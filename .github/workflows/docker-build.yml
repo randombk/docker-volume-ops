@@ -40,5 +40,4 @@ jobs:
       with:
         platforms: linux/amd64,linux/arm64
         push: true
-        load: true
-        tags: ${{ matrix.config.tag }}
+        tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ matrix.config.tag }}
